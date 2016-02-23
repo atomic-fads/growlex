@@ -2,12 +2,20 @@ defmodule Growlex.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :growlex,
-     version: "0.0.1",
+    [app: app_name,
+     version: app_version,
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
+  end
+
+  def app_name do
+    :growlex
+  end
+
+  def app_version do
+    "0.1.0"
   end
 
   # Configuration for the OTP application

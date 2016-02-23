@@ -4,8 +4,8 @@ defmodule Growlex.Headers do
 
   def origin_headers do
     "Origin-Machine-Name: #{Network.hostname}\r\n"
-    <> "Origin-Software-Name: #{Growlex.app_name}\r\n"
-    <> "Origin-Software-Version: #{Growlex.app_version}\r\n"
+    <> "Origin-Software-Name: #{Growlex.Mixfile.app_name}\r\n"
+    <> "Origin-Software-Version: #{Growlex.Mixfile.app_version}\r\n"
     <> "Origin-Platform-Name: Windows\r\n"
     <> "Origin-Platform-Version: 0.0\r\n"
   end

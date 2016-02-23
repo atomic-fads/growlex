@@ -9,12 +9,4 @@ defmodule Growlex do
   def notify(options \\ []) do
     Notification.notify(options)
   end
-
-  def app_name do
-    "growlex"
-  end
-
-  def app_version do
-    "0.1.0"
-  end
 end
