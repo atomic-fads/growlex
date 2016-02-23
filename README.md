@@ -2,6 +2,19 @@
 
 An Elixir [GNTP](http://www.growlforwindows.com/gfw/help/gntp.aspx) library.
 
+## Examples
+
+```elixir
+notifications = [
+  [name: "success", enabled: true],
+  [name: "failed", enabled: true]
+]
+
+Growlex.register(app_name: "My Awesome App", notifications: notifications)
+
+Growlex.notify(name: "success", title: "WOOOOOOOO", text: "YEAAAAAAAAA!!!")
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
@@ -18,3 +31,13 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
           [applications: [:growlex]]
         end
 
+## TODO
+
+- [ ] Tests
+- [ ] Hex docs
+
+## Copyright and License
+
+Copyright (c) 2016, Atomic Fads LLC.
+
+Plasm source code is licensed under the Apache 2 License (see LICENSE.md).
